@@ -131,7 +131,7 @@ class Ball {
 
     offCanvasDetect() {
         if (this.offCanvas()) {
-            this.remove()
+            this.removeFrom()
             return true
         }
         return false
