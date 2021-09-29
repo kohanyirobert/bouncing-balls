@@ -129,14 +129,6 @@ class Ball {
         console.dir(this)
     }
 
-    offCanvasDetect() {
-        if (this.offCanvas()) {
-            this.removeFrom()
-            return true
-        }
-        return false
-    }
-
     changeVel(delta) {
         this.velMul += delta
         if (this.velMul < 0) {

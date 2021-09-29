@@ -5,7 +5,8 @@ function loop() {
     ctx.fillRect(0, 0, canvas.width, canvas.height)
 
     for (const ball of balls) {
-        if (ball.offCanvasDetect()) {
+        if (ball.offCanvas()) {
+            ball.removeFrom(balls)
             continue
         }
         ball.draw()
